@@ -1,4 +1,4 @@
-name: SonarQube Scan
+name: SonarCloud
 
 on:
   push:
@@ -31,10 +31,10 @@ jobs:
 
       - name: Build and analyze
         env:
-          SONAR_TOKEN: ${{ secrets.ENADE }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           mvn clean verify sonar:sonar \
             -Dsonar.projectKey=ENADE \
-            -Dsonar.organization=mauricioreiis \
+            -Dsonar.organization=trabalho-mes-01 \
             -Dsonar.host.url=https://sonarcloud.io \
-            -Dsonar.login=${{ secrets.ENADE }}
+            -Dsonar.login=${{ secrets.SONAR_TOKEN }}
