@@ -70,5 +70,4 @@ public class DAO<T> implements Serializable {
         return em.createQuery(query).setFirstResult(firstResult)
                 .setMaxResults(maxResults).getResultList();
     }
-
 }
