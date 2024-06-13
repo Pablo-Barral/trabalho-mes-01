@@ -5,6 +5,10 @@
     <artifactId>enade</artifactId>
     <version>1.1</version>
     <packaging>war</packaging>
+    <properties>
+        <sonar.organization>pablo-barral</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.jboss.weld.servlet</groupId>
@@ -147,6 +151,11 @@
                     <testFailureIgnore>true</testFailureIgnore>
                     <shutdown>kill</shutdown> <!-- Use it if required-->
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.1</version>
             </plugin>
         </plugins>
         <finalName>${project.artifactId}##${project.version}</finalName>

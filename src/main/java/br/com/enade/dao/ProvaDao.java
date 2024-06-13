@@ -52,5 +52,4 @@ public class ProvaDao implements Serializable {
 
 		return query.getResultList();
 	}
-
 }
