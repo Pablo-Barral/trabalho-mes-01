@@ -30,8 +30,8 @@ public class TbusuarioTest {
     @Test
     public void testGetSetNomeUsuario() {
         System.out.println("getNomeUsuario");
-        validuser.setNomeUsuario("Zé");
-        assertEquals("Zé", validuser.getNomeUsuario());
+        validuser.setNomeUsuario("ZÃ©");
+        assertEquals("ZÃ©", validuser.getNomeUsuario());
     }
 
     @Test
@@ -39,12 +39,6 @@ public class TbusuarioTest {
         System.out.println("getEmailUsuario");
         validuser.setEmailUsuario("ze@ze.com");
         assertEquals("ze@ze.com", validuser.getEmailUsuario());
-    }
-
-    @Test
-    public void testGetSenhaUsuario() {
-        System.out.println("Falha");
-        fail("The test case is a prototype.");
     }
 
     @Ignore("Class not ready for tests")

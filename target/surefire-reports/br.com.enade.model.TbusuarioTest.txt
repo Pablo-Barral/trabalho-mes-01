@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: br.com.enade.model.TbusuarioTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.277 s <<< FAILURE! - in br.com.enade.model.TbusuarioTest
+testGetSenhaUsuario on testGetSenhaUsuario(br.com.enade.model.TbusuarioTest)(br.com.enade.model.TbusuarioTest)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at br.com.enade.model.TbusuarioTest.testGetSenhaUsuario(TbusuarioTest.java:47)
+
